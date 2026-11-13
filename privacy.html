@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>599-a3 Privacy Policy</title>
+<style>
+  body { font-family: system-ui, -apple-system, sans-serif; max-width: 720px; margin: 40px auto; padding: 0 16px; line-height: 1.6; color: #1f2328; background: #fff; }
+  h1 { font-size: 1.6rem; } h2 { font-size: 1.15rem; margin-top: 1.6em; }
+</style>
+</head>
+<body>
+<h1>599-a3 Privacy Policy</h1>
+<p>Last updated: November 12, 2026</p>
+
+<p>
+  599-a3 is a course-project assistant (USC CSCI 599, Fall 2026). It is used
+  only by its developer with one dedicated, temporary test Google account that
+  holds fictitious data. It is not offered to other users.
+</p>
+
+<h2>What Google data the app accesses</h2>
+<ul>
+  <li><strong>Gmail</strong> (<code>gmail.readonly</code>, <code>gmail.compose</code>):
+      reads messages in the test inbox to summarize them, and creates drafts.
+      A draft is sent only after a person explicitly approves that send, and
+      only to addresses on an allowlist. The app never sends mail on its own.</li>
+  <li><strong>Google Calendar</strong> (<code>calendar.readonly</code>): reads
+      events to build daily briefings and meeting reminders. The app does not
+      change calendar data.</li>
+</ul>
+
+<h2>How the data is used</h2>
+<p>
+  Email and calendar content is used only to answer the account owner's
+  requests and to produce scheduled briefings and reminders, delivered to the
+  owner's private chat. Content needed for a response is processed by a
+  language model: either OpenAI's API or a model running on the developer's
+  own computer. The data is not sold, used for advertising, or shared with
+  anyone else. Use of information received from Google APIs follows the
+  Google API Services User Data Policy, including the Limited Use requirements.
+</p>
+
+<h2>Storage and security</h2>
+<ul>
+  <li>The OAuth refresh token is stored in Google Cloud Secret Manager and is
+      readable only by the assistant's server account.</li>
+  <li>Conversation history may include summaries of emails or events; it is
+      stored on the assistant's private server and in a private Google Cloud
+      Storage bucket used for backups.</li>
+  <li>Access to the server is limited to the developer and course staff.</li>
+</ul>
+
+<h2>Retention and deletion</h2>
+<p>
+  Data is kept only for the duration of the course assignment and its grading,
+  after which the server, its storage bucket and the stored token are deleted.
+  Access can be revoked at any time at
+  <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>,
+  which immediately stops the app from reading the account.
+</p>
+
+<h2>Contact</h2>
+<p>Questions: contact the developer through the email address shown on the app's Google consent screen.</p>
+</body>
+</html>
